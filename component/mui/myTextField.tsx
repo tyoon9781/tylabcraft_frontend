@@ -45,40 +45,40 @@ const Options = () => {
   const VariantOptions = ({ variant }: { variant: variantType }) => {
     return (
       <>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Required' required />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} label='Shrink' InputLabelProps={{ shrink: true }} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Disabled' disabled />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Password' type='password' />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Read only' InputProps={{ readOnly: true }} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='number' type='number' InputLabelProps={{ shrink: true }} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Search' type='search' />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Helper' helperText='help text' />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Default' defaultValue='Text' />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Error' error />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='Multi line' multiline maxRows={4} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField variant={variant} fullWidth label='expand' multiline rows={4} />
         </Grid>
       </>
@@ -103,7 +103,7 @@ const Icon = () => {
     return (
       <>
         <Grid container spacing={2} sx={{ mb: 3 }}>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <FormControl variant={variant} fullWidth>
               <InputLabel>Form Control</InputLabel>
               <Input
@@ -115,7 +115,7 @@ const Icon = () => {
               />
             </FormControl>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <TextField
               fullWidth
               variant={variant}
@@ -129,7 +129,7 @@ const Icon = () => {
               }}
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
               <AccountCircle /> <TextField variant={variant} label='Box' fullWidth />
             </Box>
@@ -168,25 +168,25 @@ const Color = () => {
   const ColorComponent = ({ variant, focus }: { variant: variantType; focus: boolean }) => {
     return (
       <Grid container spacing={2} sx={{ mb: 2 }}>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='Label' fullWidth variant={variant} focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='primary' fullWidth variant={variant} color='primary' focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='secondary' fullWidth variant={variant} color='secondary' focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='success' fullWidth variant={variant} color='success' focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='info' fullWidth variant={variant} color='info' focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='warning' fullWidth variant={variant} color='warning' focused={focus} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <TextField label='error' fullWidth variant={variant} color='error' focused={focus} />
         </Grid>
       </Grid>
