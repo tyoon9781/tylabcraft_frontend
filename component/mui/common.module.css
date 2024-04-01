@@ -1,0 +1,21 @@
+.groupwrapper {
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #bbe3f1;
+  border-radius: 10px;
+}
+.groupwrapper h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+.compwrapper {
+  min-width: 300px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.compwrapper h3 {
+  font-size: 1.5rem;
+  margin: 20px 0px 10px;
+  text-decoration: underline;
+}
